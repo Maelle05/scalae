@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import RegularText from './composents/UI/RegularText';
+import LogIn from './view/LogIn';
+import SignIn from './view/SignIn';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <RegularText>Bienvenu sur Scalae !</RegularText>
+      <SignIn />
+      <LogIn/>
+      
       <StatusBar style="auto" />
     </View>
   );
