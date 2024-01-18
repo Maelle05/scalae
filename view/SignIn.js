@@ -12,21 +12,6 @@ const SignIn = ( props ) => {
   
   const onSubmit = () => {
     console.log('S\'enregistré');
-    const auth = getAuth();
-
-    signInWithEmailAndPassword(auth, email, mdp).then((userCredential) => {
-      // Signed in 
-      const user = userCredential.user;
-
-      console.log(user, 'c\'est bien enregistré')
-
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-
-      console.log(errorCode, errorMessage);
-    });
-  
   }
   
   return (
